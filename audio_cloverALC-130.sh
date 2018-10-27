@@ -135,6 +135,11 @@ fi
 # verify system version
 case ${gSysVer} in
 
+    10.14* ) gSysName="Mojave"
+    gSysFolder=kexts/10.14
+    gSID=$(csrutil status)
+    ;;
+    
     10.13* ) gSysName="High Sierra"
     gSysFolder=kexts/10.13
     gSID=$(csrutil status)
